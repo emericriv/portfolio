@@ -10,7 +10,7 @@ const Home = () => {
       <p className="text-lg text-sky-200 mb-8 max-w-lg mx-auto">
         Je suis un développeur full stack, passionné par la programmation et les
         nouvelles technologies. J'adore apprendre des nouvelles technologies et
-        continuellement amélioré mes compétences.
+        continuellement améliorer mes compétences.
       </p>
       <div className="flex gap-4">
         <button className="px-6 py-3 rounded-l-2xl bg-gradient-to-r from-sky-600 to-cyan-400 text-white font-semibold shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transition">
