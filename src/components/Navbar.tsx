@@ -9,8 +9,8 @@ const Navbar = () => {
     <>
       {/* Overlay div that darken the background when the menu is open */}
       <div
-        className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center 
-      justify-center transition-all duration-300 ease-in-out
+        className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex 
+          flex-col items-center justify-center transition-all duration-300 ease-in-out
       ${
         isOpen
           ? "h-screen opacity-100 pointer-events-auto"
@@ -25,11 +25,13 @@ const Navbar = () => {
         }`}
       >
         <div
-          className={`md:max-w-3xl sm:max-w-md max-w-xs w-full mx-auto flex md:block items-center flex-col rounded-2xl backdrop-blur-md border border-cyan-500/30 bg-black/50 transition-all duration-500 ${
-            isOpen
-              ? "shadow-2xl shadow-cyan-400/30"
-              : "shadow-lg shadow-cyan-500/10"
-          }`}
+          className={`md:max-w-3xl sm:max-w-md max-w-xs w-full mx-auto flex md:block items-center 
+            flex-col rounded-2xl backdrop-blur-md border border-cyan-500/30 bg-black/50 
+            transition-all duration-500 ${
+              isOpen
+                ? "shadow-2xl shadow-cyan-400/30"
+                : "shadow-lg shadow-cyan-500/10"
+            }`}
         >
           <div className="flex justify-between items-center w-full md:gap-0 py-3 px-6">
             <a href="/" className="text-white font-semibold">
@@ -42,7 +44,8 @@ const Navbar = () => {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="text-slate-200 uppercase hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.7)] transition-all"
+                  className="text-slate-200 uppercase hover:text-cyan-400 
+                  hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.7)] transition-all"
                 >
                   {item}
                 </a>
