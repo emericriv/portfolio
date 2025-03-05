@@ -34,7 +34,7 @@ const Navbar = () => {
             }`}
         >
           <div className="flex justify-between items-center w-full md:gap-0 py-3 px-6">
-            <a href="/" className="text-white font-semibold">
+            <a href="#" className="text-white font-semibold">
               Emeric<span className="text-cyan-400">.riv</span>
             </a>
 
