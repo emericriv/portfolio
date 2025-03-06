@@ -20,8 +20,8 @@ const Experience = () => {
       >
         Experience
       </h2>
-      <div className="border border-sky-600/30 rounded-2xl p-6 w-full md:max-w-4xl flex flex-col items-center justify-items-start">
-        <p className="text-gray-300 mb-6 text-justify px-5">
+      <div className="border border-sky-600/30 rounded-2xl py-6 px-6 sm:px-10 w-full md:max-w-4xl flex flex-col items-center justify-items-start">
+        <p className="text-gray-300 mb-6 text-justify">
           J'ai découvert en 2022 une forte apétence pour la programmation, je me
           suis formé en ligne, notamment avec FUN MOOC, sur du{" "}
           <span className="bg-sky-700/30 text-cyan-600 py-1 px-3 rounded-full text-sm">
@@ -49,8 +49,8 @@ const Experience = () => {
           . Je continue de me former dessus et à découvrir de nouvelles
           technologies.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="rounded-xl p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="p-3">
             <h3 className="text-xl font-bold mb-4">Frontend</h3>
             <div className="flex flex-wrap gap-2">
               {frontendSkills.map((skill, key) => (
@@ -63,7 +63,7 @@ const Experience = () => {
               ))}
             </div>
           </div>
-          <div className="rounded-xl p-6">
+          <div className="p-3">
             <h3 className="text-xl font-bold mb-4">Backend</h3>
             <div className="flex flex-wrap gap-2">
               {backendSkills.map((skill, key) => (
