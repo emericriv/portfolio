@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <section
       id="accueil"
-      className="min-h-screen flex items-center justify-center px-4 gap-6"
+      className="min-h-screen flex items-center justify-center px-4 gap-6 mb-25 md:mb-10"
     >
       <div className="flex flex-col items-center justify-center text-center w-full md:max-w-3/5">
         <h1
@@ -27,7 +27,7 @@ const Home = () => {
       </div>
       <div className="relative w-90 hidden md:block">
         <img
-          src="/src/assets/img/moi.jpg"
+          src="/img/moi.jpg"
           alt="Développeur"
           className="w-96 rounded-4xl object-cover filter brightness-90"
         />

@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex flex-col items-center justify-center px-4"
+      className="min-h-screen flex flex-col items-center justify-center px-4 scroll-mt-20 sm:scroll-mt-0 mb-25 md:mb-10"
     >
       <h2
         className="text-3xl text-center font-bold bg-clip-text 
