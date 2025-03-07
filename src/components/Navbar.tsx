@@ -1,7 +1,26 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isOpen &&
+        navRef.current &&
+        !navRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   const menuItems = ["Accueil", "Experience", "Parcours", "Projets", "Contact"];
 
@@ -20,6 +39,7 @@ const Navbar = () => {
 
       {/* Navbar  */}
       <nav
+        ref={navRef}
         className={`fixed w-full flex items-center z-50 transition-all duration-500 ${
           isOpen ? "top-1/2 -translate-y-1/2" : "top-3 md:top-6 translate-y-0"
         }`}
