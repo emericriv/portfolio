@@ -2,7 +2,7 @@ const Parcours = () => {
   return (
     <section
       id="parcours"
-      className="min-h-screen flex flex-col items-center justify-center px-4"
+      className="min-h-screen flex flex-col items-center justify-center px-4 scroll-mt-20 xl:scroll-mt-16"
     >
       <h2
         className="text-3xl text-center font-bold bg-clip-text 
@@ -10,7 +10,7 @@ const Parcours = () => {
       >
         Parcours
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div
           id="ecoles"
           className="border border-sky-600/30 rounded-2xl py-6 px-6 sm:px-10 w-full md:max-w-4xl flex flex-col items-center justify-items-start text-justify"
