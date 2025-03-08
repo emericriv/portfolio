@@ -29,9 +29,8 @@ const Home = () => {
         <img
           src="/img/moi.jpg"
           alt="Développeur"
-          className="w-96 rounded-4xl object-cover filter brightness-90"
+          className="w-96 rounded-4xl object-cover filter brightness-95"
         />
-        <div className="absolute inset-0 bg-black/20 rounded-4xl"></div>
       </div>
     </section>
   );

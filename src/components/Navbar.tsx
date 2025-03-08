@@ -60,29 +60,16 @@ const Navbar = () => {
 
             {/* Menu Desktop */}
             <div className="hidden md:flex gap-6 items-center">
-              {menuItems.map((item) =>
-                item === "Projets" ? (
-                  <a
-                    key={item}
-                    href="https://summit-journey.emeric-riviere.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={() => setIsOpen(false)}
-                    className="hover:text-cyan-400 hover:scale-110 transition"
-                  >
-                    {item}
-                  </a>
-                ) : (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    onClick={() => setIsOpen(false)}
-                    className="hover:text-cyan-400 hover:scale-110 transition"
-                  >
-                    {item}
-                  </a>
-                )
-              )}
+              {menuItems.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-cyan-400 hover:scale-110 transition"
+                >
+                  {item}
+                </a>
+              ))}
             </div>
 
             {/* Bouton Mobile */}
@@ -101,29 +88,16 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col items-center justify-center gap-8 uppercase">
-              {menuItems.map((item) =>
-                item === "Projets" ? (
-                  <a
-                    key={item}
-                    href="https://summit-journey.emeric-riviere.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={() => setIsOpen(false)}
-                    className="hover:text-cyan-400 hover:scale-110 transition"
-                  >
-                    {item}
-                  </a>
-                ) : (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    onClick={() => setIsOpen(false)}
-                    className="hover:text-cyan-400 hover:scale-110 transition"
-                  >
-                    {item}
-                  </a>
-                )
-              )}
+              {menuItems.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-cyan-400 hover:scale-110 transition"
+                >
+                  {item}
+                </a>
+              ))}
             </div>
           </div>
         </div>
