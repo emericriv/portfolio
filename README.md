@@ -11,7 +11,7 @@ Bienvenue sur le dépôt de mon portfolio personnel. Ce projet met en avant mon 
 
 ## 📸 Aperçu du projet
 
-![Aperçu du Portfolio](img/portfolio.png)
+![Aperçu du Portfolio](public/img/portfolio.png)
 
 ## 🔗 Accès au site
 
