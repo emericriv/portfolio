@@ -36,7 +36,7 @@ const Projets = () => {
       ),
       image: "img/portfolio.png",
       link: "#",
-      github: "https://github.com/emeric-riviere/portfolio",
+      github: "https://github.com/emericriv/portfolio",
     },
     {
       title: "Slider Dragon Ball Z - One Piece",
