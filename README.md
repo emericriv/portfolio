@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# Portfolio - Emeric Rivière
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt de mon portfolio personnel. Ce projet met en avant mon parcours, mes compétences et mes projets réalisés.
 
-Currently, two official plugins are available:
+## 🚀 Technologies utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - Bibliothèque JavaScript pour la création d'interfaces dynamiques.
+- **TypeScript** - Superset de JavaScript pour une meilleure gestion des types.
+- **Vite** - Outil de build rapide pour les projets React.
+- **Tailwind CSS** - Framework CSS pour un design moderne et réactif.
 
-## Expanding the ESLint configuration
+## 📸 Aperçu du projet
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Aperçu du Portfolio](img/portfolio.png)
 
-- Configure the top-level `parserOptions` property like this:
+## 🔗 Accès au site
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Le portfolio est disponible à l'adresse suivante :
+[https://emeric-riviere.com](https://emeric-riviere.com)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📜 Fonctionnalités
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Présentation de mon parcours et de mes compétences.
+- Affichage interactif de mes projets avec des aperçus.
+- Navigation fluide avec une interface moderne.
+- Responsive design pour une compatibilité avec tous les écrans.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🛠 Installation et exécution
+
+Pour exécuter ce projet en local :
+
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/Emeric-Riviere/portfolio.git
+   cd portfolio
+   ```
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
+3. **Lancer l'application**
+   ```bash
+   npm run dev
+   ```
+
+L'application sera accessible à l'adresse `http://localhost:5173` par défaut.
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! Pour proposer des améliorations :
+
+1. Fork le dépôt
+2. Crée une branche (`feature/amélioration`)
+3. Commit tes modifications (`git commit -m 'Ajout d'une amélioration'`)
+4. Pousse ta branche (`git push origin feature/amélioration`)
+5. Ouvre une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence **MIT**. Tu es libre de le modifier et de le partager avec attribution.
+
+---
+
+Merci d'avoir visité mon portfolio ! 😊 N'hésite pas à me contacter si tu as des questions ou des suggestions.

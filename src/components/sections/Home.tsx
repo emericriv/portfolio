@@ -18,10 +18,10 @@ const Home = () => {
         </p>
         <div className="flex gap-4">
           <button className="px-6 py-3 rounded-l-2xl bg-gradient-to-r from-sky-600 to-cyan-400 text-white font-semibold shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transition cursor-pointer">
-            Me contacter
+            <a href="#contact">Me contacter</a>
           </button>
           <button className="px-6 py-3 rounded-e-2xl border border-cyan-400 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-sky-600 hover:text-white hover:border-sky-600 font-semibold transition cursor-pointer">
-            En savoir plus
+            <a href="#parcours">En savoir plus</a>
           </button>
         </div>
       </div>
