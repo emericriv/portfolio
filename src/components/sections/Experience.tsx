@@ -49,7 +49,7 @@ const Experience = () => {
           . Je continue de me former dessus et à découvrir de nouvelles
           technologies.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="p-3">
             <h3 className="text-xl font-bold mb-4">Frontend</h3>
             <div className="flex flex-wrap gap-2">
@@ -74,6 +74,14 @@ const Experience = () => {
                   {skill}
                 </span>
               ))}
+            </div>
+          </div>
+          <div className="p-3">
+            <h3 className="text-xl font-bold mb-4">DevOps</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="bg-sky-700/30 text-cyan-600 py-1 px-3 rounded-full text-sm">
+                AWS
+              </span>
             </div>
           </div>
         </div>

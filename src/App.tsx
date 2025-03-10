@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import { Contact } from "./components/sections/Contact";
 import Experience from "./components/sections/Experience";
 import Home from "./components/sections/Home";
 import Parcours from "./components/sections/Parcours";
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <Parcours />
       <Projets />
+      <Contact />
     </>
   );
 }
