@@ -9,9 +9,13 @@ export const Contact = () => {
     message: "",
   });
 
+  let error_count = 0;
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Need to apply styles by style and not classname because tailwindcss
+    // class have a lower priority than the toast styles
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -20,11 +24,47 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then(() => {
-        toast.success("Message envoyé avec succès!");
+        toast.success("Message envoyé avec succès!", {
+          style: {
+            backgroundColor: "#16a34a", // bg-green-600
+            color: "white",
+            fontWeight: 600, // font-semibold
+            padding: "12px 16px", // px-4 py-3
+            borderRadius: "0.5rem", // rounded-lg
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // shadow-lg
+            transform: "scale(0.95)", // scale-95
+            transition: "transform 0.2s ease-in-out", // transition-transform
+          },
+          iconTheme: {
+            primary: "white",
+            secondary: "green",
+          },
+        });
         setFormData({ name: "", email: "", message: "" });
       })
       .catch(() => {
-        toast.error("Une erreur est survenue, veuillez réessayer.");
+        error_count++;
+        toast.error(
+          error_count < 2
+            ? "Une erreur est survenue, veuillez réessayer."
+            : "Il semble y avoir un problème, merci d'envoyer votre mail directement à e19riviere@gmail.com",
+          {
+            style: {
+              backgroundColor: "#dc2626", // bg-red-600
+              color: "white",
+              fontWeight: 600, // font-semibold
+              padding: "12px 16px", // px-4 py-3
+              borderRadius: "0.5rem", // rounded-lg
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // shadow-lg
+              transform: "scale(0.95)", // scale-95
+              transition: "transform 0.2s ease-in-out", // transition-transform
+            },
+            iconTheme: {
+              primary: "white",
+              secondary: "red",
+            },
+          }
+        );
       });
   };
 
