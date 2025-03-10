@@ -84,7 +84,7 @@ const Navbar = () => {
           {/* Menu Mobile */}
           <div
             className={`w-full overflow-hidden transition-all duration-500 ${
-              isOpen ? "max-h-60 py-4" : "max-h-0"
+              isOpen ? "max-h-75 py-4" : "max-h-0"
             }`}
           >
             <div className="flex flex-col items-center justify-center gap-8 uppercase">
