@@ -60,7 +60,7 @@ const Projets = () => {
   return (
     <section
       id="projets"
-      className="min-h-screen flex flex-col items-center justify-center px-4 mb-25 scroll-mt-5 sm:scroll-mt-24 lg:scroll-mt-8"
+      className="min-h-screen flex flex-col items-center justify-center px-4 md:px-28 mb-25 scroll-mt-5 sm:scroll-mt-24 lg:scroll-mt-8"
     >
       <h2
         className="text-3xl text-center font-bold bg-clip-text 
@@ -68,7 +68,7 @@ const Projets = () => {
       >
         Projets
       </h2>
-      <div className="w-full max-w-3/4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {projets.map((projet, index) => (
           <div
             key={index}
@@ -85,7 +85,7 @@ const Projets = () => {
             />
             <div className="p-4 flex flex-col flex-grow">
               <h3 className="text-xl font-bold text-center">{projet.title}</h3>
-              <p className="text-justify mt-2 flex-grow">
+              <p className="text-justify mt-2 flex-grow mb-4">
                 {projet.description}
               </p>
               <div className="mt-2 flex items-center justify-between w-full">

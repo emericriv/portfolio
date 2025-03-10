@@ -8,6 +8,11 @@ html, body {
   color: #f3f4f6;
 }
 
+p {
+  margin-right: 0;
+  margin-left: 0; 
+}
+
 /* Désactive le surlignage de l'autocomplétion des champs de formulaire */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

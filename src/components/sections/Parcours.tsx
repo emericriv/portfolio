@@ -2,7 +2,7 @@ const Parcours = () => {
   return (
     <section
       id="parcours"
-      className="min-h-screen flex flex-col items-center justify-center px-4 scroll-mt-20 md:scroll-mt-25 xl:scroll-mt-16  mb-25"
+      className="min-h-screen flex flex-col items-center justify-center px-4 md:px-28 scroll-mt-20 md:scroll-mt-25 xl:scroll-mt-20  mb-25"
     >
       <h2
         className="text-3xl text-center font-bold bg-clip-text 

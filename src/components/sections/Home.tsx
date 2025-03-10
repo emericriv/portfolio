@@ -2,16 +2,16 @@ const Home = () => {
   return (
     <section
       id="accueil"
-      className="min-h-screen flex items-center justify-center px-4 gap-6 mb-25 md:mb-10"
+      className="min-h-screen flex items-center justify-center px-4 lg:px-28 gap-6 mb-25 md:mb-10"
     >
-      <div className="flex flex-col items-center justify-center text-center w-full md:max-w-3/5">
+      <div className="flex flex-col items-start justify-center text-left w-full md:max-w-3/5">
         <h1
-          className="text-5xl text-center font-bold bg-clip-text 
+          className="text-5xl text-left font-bold bg-clip-text 
           text-transparent bg-gradient-to-r from-sky-600 to-cyan-400 mb-8"
         >
           Bienvenue, je suis Emeric Rivière, développeur full stack
         </h1>
-        <p className="text-lg text-sky-200 mb-8 max-w-lg mx-auto">
+        <p className="text-lg text-sky-200 mb-6 max-w-lg mx-auto">
           Je suis un développeur full stack, passionné par la programmation et
           les nouvelles technologies. J'adore apprendre des nouvelles
           technologies et continuellement améliorer mes compétences.
@@ -25,7 +25,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="relative w-90 hidden md:block">
+      <div className="relative w-90 hidden lg:block">
         <img
           src="/img/moi.jpg"
           alt="Développeur"

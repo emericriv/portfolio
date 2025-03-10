@@ -72,10 +72,10 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 px-4 md:px-28"
     >
       <Toaster position="top-right" />
-      <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
+      <div className="w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
         <h2
           className="text-3xl text-center font-bold bg-clip-text 
           text-transparent bg-gradient-to-r from-sky-600 to-cyan-400 mb-8"
