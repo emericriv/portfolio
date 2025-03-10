@@ -24,6 +24,7 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then(() => {
+        error_count = 0;
         toast.success("Message envoyé avec succès!", {
           style: {
             backgroundColor: "#16a34a", // bg-green-600
