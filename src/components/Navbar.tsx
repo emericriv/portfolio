@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,13 +73,33 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Bouton Mobile */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-white cursor-pointer"
-            >
-              {isOpen ? "⨉" : "☰"}
-            </button>
+            {/* Affichage des réseaux sur le manu mobile */}
+            <div className="md:hidden flex gap-3 items-center">
+              <a
+                href="https://github.com/emericriv"
+                target="_blank"
+                rel="noreferrer"
+                className="w-8 h-8 flex items-center justify-center border border-white rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white hover:text-black ml-auto"
+              >
+                <FaGithub size={16} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/riviere-emeric/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-8 h-8 flex items-center justify-center border border-white rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white hover:text-black ml-auto"
+              >
+                <FaLinkedin size={16} />
+              </a>
+
+              {/* Bouton Mobile */}
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="w-8 h-8 flex items-center justify-center border border-white rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white hover:text-black ml-auto cursor-pointer"
+              >
+                {isOpen ? "⨉" : "☰"}
+              </button>
+            </div>
           </div>
 
           {/* Menu Mobile */}
