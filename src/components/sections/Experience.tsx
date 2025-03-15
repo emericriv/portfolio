@@ -1,3 +1,5 @@
+import Tag from "../Tag";
+
 const Experience = () => {
   const frontendSkills: string[] = [
     "React",
@@ -21,42 +23,21 @@ const Experience = () => {
         <p className="text-white mb-6 text-justify">
           J'ai découvert en 2022 une forte appétence pour la programmation, je
           me suis formé en ligne, notamment avec FUN MOOC, sur du{" "}
-          <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-            Python
-          </span>{" "}
-          pour des besoins de banc de tests pour l'alternance que j'ai réalisé
-          pendant mon cursus ingénieur. Pendant ce même cursus, je me suis
-          intéressé au développement web, j'ai d'abord commencé par du pur{" "}
-          <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-            HTLM/CSS/JS
-          </span>
-          , puis grâce à la formation de Jean-Baptiste Brasselet, j'ai découvert
-          tout l'environnement web, j'ai pu réaliser des projets personnels avec{" "}
-          <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-            React
-          </span>
-          ,{" "}
-          <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-            Django
-          </span>{" "}
-          et{" "}
-          <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-            AWS
-          </span>
-          . Je continue de me former dessus et à découvrir de nouvelles
-          technologies.
+          <Tag>Python</Tag> pour des besoins de banc de tests pour l'alternance
+          que j'ai réalisé pendant mon cursus ingénieur. Pendant ce même cursus,
+          je me suis intéressé au développement web, j'ai d'abord commencé par
+          du pur <Tag>HTLM/CSS/JS</Tag>, puis grâce à la formation de
+          Jean-Baptiste Brasselet, j'ai découvert tout l'environnement web, j'ai
+          pu réaliser des projets personnels avec <Tag>React</Tag>,{" "}
+          <Tag>Django</Tag> et <Tag>AWS</Tag>. Je continue de me former dessus
+          et à découvrir de nouvelles technologies.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="p-3">
             <h3 className="text-secondary text-xl font-bold mb-4">Frontend</h3>
             <div className="flex flex-wrap gap-2">
               {frontendSkills.map((skill, key) => (
-                <span
-                  key={key}
-                  className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm"
-                >
-                  {skill}
-                </span>
+                <Tag key={key}>{skill}</Tag>
               ))}
             </div>
           </div>
@@ -64,21 +45,14 @@ const Experience = () => {
             <h3 className="text-secondary text-xl font-bold mb-4">Backend</h3>
             <div className="flex flex-wrap gap-2">
               {backendSkills.map((skill, key) => (
-                <span
-                  key={key}
-                  className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm"
-                >
-                  {skill}
-                </span>
+                <Tag key={key}>{skill}</Tag>
               ))}
             </div>
           </div>
           <div className="p-3">
             <h3 className="text-secondary text-xl font-bold mb-4">DevOps</h3>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-                AWS
-              </span>
+              <Tag>AWS</Tag>
             </div>
           </div>
         </div>

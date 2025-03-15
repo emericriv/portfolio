@@ -1,11 +1,5 @@
-import { ReactNode } from "react";
 import { FaGithub } from "react-icons/fa";
-
-const StyledText = ({ children }: { children: ReactNode }) => (
-  <span className="bg-secondary/30 text-custom-green py-1 px-3 rounded-full text-sm">
-    {children}
-  </span>
-);
+import Tag from "../Tag";
 
 const Projets = () => {
   const projets = [
@@ -13,12 +7,11 @@ const Projets = () => {
       title: "Summit Journey",
       description: (
         <>
-          Summit Journey est mon premier projet, il utilise{" "}
-          <StyledText>React</StyledText> et <StyledText>Django</StyledText> afin
-          de créer un site qui se comporte comme votre journal de bord de
-          grimpe. N'hésitez pas à créer un compte pour tester les
-          fonctionnalités. C'est sans vérification, juste pour pouvoir lier les
-          sorties à votre compte.
+          Summit Journey est mon premier projet, il utilise <Tag>React</Tag> et{" "}
+          <Tag>Django</Tag> afin de créer un site qui se comporte comme votre
+          journal de bord de grimpe. N'hésitez pas à créer un compte pour tester
+          les fonctionnalités. C'est sans vérification, juste pour pouvoir lier
+          les sorties à votre compte.
         </>
       ),
       image: "img/summit-journey.png",
@@ -29,9 +22,8 @@ const Projets = () => {
       title: "Mon Portfolio",
       description: (
         <>
-          Ce Portfolio est mon deuxième projet, il utilise{" "}
-          <StyledText>React</StyledText> et <StyledText>TailwindCSS</StyledText>
-          .
+          Ce Portfolio est mon deuxième projet, il utilise <Tag>React</Tag> et{" "}
+          <Tag>TailwindCSS</Tag>.
         </>
       ),
       image: "img/portfolio.png",
@@ -43,9 +35,8 @@ const Projets = () => {
       description: (
         <>
           Ce projet est un de mes premiers projets web, il utilise les
-          technologies de base du web sans aucun framework (
-          <StyledText>HTML</StyledText>, <StyledText>CSS</StyledText>,{" "}
-          <StyledText>JS</StyledText>). Il s'agit d'un de mes tout premiers
+          technologies de base du web sans aucun framework (<Tag>HTML</Tag>,{" "}
+          <Tag>CSS</Tag>, <Tag>JS</Tag>). Il s'agit d'un de mes tout premiers
           projets, sur lequel le responsive n'a pas été travaillé. Pour le
           moment, il ne rend bien que sur PC, son amélioration n'est pas prévue
           pour le moment.
