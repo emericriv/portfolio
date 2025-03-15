@@ -46,17 +46,13 @@ const Navbar = () => {
         }`}
       >
         <div
-          className={`md:max-w-3xl sm:max-w-md max-w-xs w-full mx-auto flex md:block items-center 
-            flex-col rounded-2xl backdrop-blur-md border border-cyan-500/30 bg-black/50 
-            transition-all duration-500 ${
-              isOpen
-                ? "shadow-2xl shadow-cyan-400/30"
-                : "shadow-lg shadow-cyan-500/10"
-            }`}
+          className="md:max-w-3xl sm:max-w-md max-w-xs w-full mx-auto flex md:block items-center 
+            flex-col rounded-2xl backdrop-blur-md border border-primary/20 bg-background-lighten
+            transition-all duration-500"
         >
           <div className="flex justify-between items-center w-full md:gap-0 py-3 px-6">
-            <a href="#" className="text-white font-semibold">
-              Emeric<span className="text-cyan-400">.riv</span>
+            <a href="#" className="text-text-color font-semibold">
+              Emeric<span className="text-primary">.riv</span>
             </a>
 
             {/* Menu Desktop */}
@@ -66,7 +62,7 @@ const Navbar = () => {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   onClick={() => setIsOpen(false)}
-                  className="hover:text-cyan-400 hover:scale-110 transition"
+                  className="text-text-color hover:text-primary hover:scale-110 transition"
                 >
                   {item}
                 </a>
@@ -114,7 +110,7 @@ const Navbar = () => {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   onClick={() => setIsOpen(false)}
-                  className="hover:text-cyan-400 hover:scale-110 transition"
+                  className="text-text-color hover:text-primary hover:scale-110 transition"
                 >
                   {item}
                 </a>

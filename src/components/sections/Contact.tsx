@@ -27,18 +27,19 @@ export const Contact = () => {
         error_count = 0;
         toast.success("Message envoyé avec succès!", {
           style: {
-            backgroundColor: "#16a34a", // bg-green-600
-            color: "white",
+            backgroundColor: "oklch(22.4% 0.0395 258.88)", // bg-green-600
+            color: "oklch(92.5% 0.0271 252.53)",
             fontWeight: 600, // font-semibold
             padding: "12px 16px", // px-4 py-3
             borderRadius: "0.5rem", // rounded-lg
+            border: "1px solid oklch(68.09% 0.1529 183.71)",
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // shadow-lg
             transform: "scale(0.95)", // scale-95
             transition: "transform 0.2s ease-in-out", // transition-transform
           },
           iconTheme: {
-            primary: "white",
-            secondary: "green",
+            primary: "oklch(68.09% 0.1529 183.71)",
+            secondary: "oklch(92.5% 0.0271 252.53)",
           },
         });
         setFormData({ name: "", email: "", message: "" });
@@ -51,18 +52,19 @@ export const Contact = () => {
             : "Il semble y avoir un problème, merci d'envoyer votre mail directement à e19riviere@gmail.com",
           {
             style: {
-              backgroundColor: "#dc2626", // bg-red-600
-              color: "white",
+              backgroundColor: "oklch(22.4% 0.0395 258.88)", // bg-red-600
+              color: "oklch(92.5% 0.0271 252.53)",
               fontWeight: 600, // font-semibold
               padding: "12px 16px", // px-4 py-3
               borderRadius: "0.5rem", // rounded-lg
+              border: "1px solid oklch(71.66% 0.1834 30)",
               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // shadow-lg
               transform: "scale(0.95)", // scale-95
               transition: "transform 0.2s ease-in-out", // transition-transform
             },
             iconTheme: {
-              primary: "white",
-              secondary: "red",
+              primary: "oklch(71.66% 0.1834 30)",
+              secondary: "oklch(92.5% 0.0271 252.53)",
             },
           }
         );
@@ -76,10 +78,7 @@ export const Contact = () => {
     >
       <Toaster position="top-right" />
       <div className="w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-        <h2
-          className="text-3xl text-center font-bold bg-clip-text 
-          text-transparent bg-gradient-to-r from-sky-600 to-cyan-400 mb-8"
-        >
+        <h2 className="text-3xl text-center font-bold text-primary mb-8">
           Contact
         </h2>
         <form className="space-y-6" onSubmit={handleSubmit}>
@@ -90,7 +89,7 @@ export const Contact = () => {
               name="name"
               required
               value={formData.name}
-              className="w-full border border-sky-600/30 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
               placeholder="Votre Nom..."
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
@@ -105,7 +104,7 @@ export const Contact = () => {
               name="email"
               required
               value={formData.email}
-              className="w-full border border-sky-600/30 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
               placeholder="exemple@gmail.com"
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -120,7 +119,7 @@ export const Contact = () => {
               required
               value={formData.message}
               rows={5}
-              className="w-full border border-sky-600/30 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
               placeholder="Votre Message..."
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
@@ -130,7 +129,7 @@ export const Contact = () => {
 
           <button
             type="submit"
-            className="w-full px-6 py-3 rounded-2xl bg-gradient-to-r from-sky-600 to-cyan-400 text-white font-semibold shadow-md hover:shadow-lg hover:brightness-110 transition cursor-pointer"
+            className="w-full px-6 py-3 rounded-2xl bg-secondary text-white font-semibold shadow-md hover:shadow-lg hover:brightness-110 transition cursor-pointer"
           >
             Envoyer le message
           </button>

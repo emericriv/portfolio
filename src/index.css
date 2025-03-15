@@ -21,12 +21,20 @@
   font-style: normal;
 }
 
+@theme {
+  --color-primary: oklch(56.03% 0.2343 258.88);
+  --color-secondary: oklch(65.28% 0.202 246.23);
+  --color-white: oklch(92.5% 0.0271 252.53);
+  --color-custom-green: oklch(68.09% 0.1529 183.71);
+  --color-background: oklch(10.15% 0.0391 258.88);
+  --color-background-lighten: oklch(22.4% 0.0395 258.88);
+  --color-text-color: oklch(92.5% 0.0271 252.53);
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Satoshi','Roboto', sans-serif;
-  background: #000;
-  color: #f3f4f6;
 }
 
 p {
