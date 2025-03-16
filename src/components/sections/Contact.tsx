@@ -81,55 +81,48 @@ export const Contact = () => {
         <h2 className="text-3xl text-center font-bold text-primary mb-8">
           Contact
         </h2>
-        <form className="space-y-6" onSubmit={handleSubmit}>
-          <div className="relative">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              value={formData.name}
-              className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
-              placeholder="Votre Nom..."
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
-            />
-          </div>
-
-          <div className="relative">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              value={formData.email}
-              className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
-              placeholder="exemple@gmail.com"
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-            />
-          </div>
-
-          <div className="relative">
-            <textarea
-              id="message"
-              name="message"
-              required
-              value={formData.message}
-              rows={5}
-              className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
-              placeholder="Votre Message..."
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-            />
-          </div>
+        <form
+          className="space-y-6 flex flex-col items-center justify-center flex-grow"
+          onSubmit={handleSubmit}
+        >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            value={formData.name}
+            className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
+            placeholder="Votre Nom..."
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={formData.email}
+            className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
+            placeholder="exemple@gmail.com"
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
+          />
+          <textarea
+            id="message"
+            name="message"
+            required
+            value={formData.message}
+            rows={5}
+            className="w-full border border-transparent bg-background-lighten rounded px-4 py-3 text-white transition focus:outline-none focus:border-primary"
+            placeholder="Votre Message..."
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
+          />
 
           <button
             type="submit"
-            className="w-full px-6 py-3 rounded-2xl bg-secondary text-white font-semibold shadow-md hover:shadow-lg hover:brightness-110 transition cursor-pointer"
+            className="w-full px-6 py-3 rounded-lg bg-secondary text-white font-semibold shadow-md hover:shadow-lg hover:brightness-110 transition cursor-pointer"
           >
             Envoyer le message
           </button>

@@ -47,10 +47,10 @@ const Navbar = () => {
       >
         <div
           className="md:max-w-3xl sm:max-w-md max-w-xs w-full mx-auto flex md:block items-center 
-            flex-col rounded-2xl backdrop-blur-md border border-primary/20 bg-background-lighten
+            flex-col rounded-lg backdrop-blur-md border border-primary/20 bg-background-lighten
             transition-all duration-500"
         >
-          <div className="flex justify-between items-center w-full md:gap-0 py-3 px-6">
+          <div className="flex justify-between items-center w-full md:gap-0 px-4 py-2 md:py-3 md:px-6">
             <a href="#" className="text-text-color font-semibold">
               Emeric<span className="text-primary">.riv</span>
             </a>
@@ -70,13 +70,14 @@ const Navbar = () => {
             </div>
 
             {/* Affichage des réseaux sur le manu mobile */}
-            <div className="md:hidden flex gap-3 items-center">
+            <div className="md:hidden flex gap-4 items-center">
               <a
                 href="https://github.com/emericriv"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 flex items-center justify-center border border-white rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white hover:text-black ml-auto"
               >
+                <span className="absolute size-12 [@media(pointer:fine)]:hidden"></span>
                 <FaGithub size={16} />
               </a>
               <a
@@ -85,14 +86,19 @@ const Navbar = () => {
                 rel="noreferrer"
                 className="w-8 h-8 flex items-center justify-center border border-white rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white hover:text-black ml-auto"
               >
+                <span className="absolute size-12 [@media(pointer:fine)]:hidden"></span>
                 <FaLinkedin size={16} />
               </a>
 
               {/* Bouton Mobile */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-8 h-8 flex items-center justify-center border border-white rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white hover:text-black ml-auto cursor-pointer"
+                type="button"
+                className="relative w-8 h-8 flex items-center justify-center border border-white 
+                rounded-full bg-transparent text-white transition-all duration-300 hover:bg-white
+                hover:text-black ml-auto cursor-pointer"
               >
+                <span className="absolute size-12 [@media(pointer:fine)]:hidden"></span>
                 {isOpen ? "⨉" : "☰"}
               </button>
             </div>

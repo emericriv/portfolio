@@ -72,10 +72,10 @@ const Projets = () => {
               className="w-full h-auto object-cover rounded-md"
             />
             <div className="p-4 flex flex-col flex-grow">
-              <h3 className="text-secondary text-xl font-bold text-center">
+              <h3 className="text-secondary text-xl font-bold text-left">
                 {projet.title}
               </h3>
-              <p className="text-text-color text-justify mt-2 flex-grow mb-4">
+              <p className="text-text-color text-justify mt-2 flex-grow mb-4 text-base">
                 {projet.description}
               </p>
               <div className="mt-2 flex items-center justify-between w-full">
