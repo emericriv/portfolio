@@ -31,6 +31,21 @@ const Projets = () => {
       github: "https://github.com/emericriv/portfolio",
     },
     {
+      title: "Réseau Social",
+      description: (
+        <>
+          Ce projet est issu d'une formation qui m'a permis de découvrir et
+          d'utiliser des technolgoies innovantes. Elle utilise <Tag>React</Tag>,
+          en utilisant <Tag>Vite</Tag> et pour le backend <Tag>Supabase</Tag>{" "}
+          qui permet de gérer les utilisateurs et les posts. Le déploiement est
+          fait via <Tag>Vercel</Tag>.
+        </>
+      ),
+      image: "img/social-media.png",
+      link: "https://social-media-website-ten-rouge.vercel.app",
+      github: "https://github.com/emericriv/social-media",
+    },
+    {
       title: "Slider Dragon Ball Z - One Piece",
       description: (
         <>
@@ -51,7 +66,7 @@ const Projets = () => {
   return (
     <section
       id="projets"
-      className="min-h-screen flex flex-col items-center justify-center px-4 md:px-28 mb-25 scroll-mt-24 md:scroll-mt-8 lg:scroll-mt-8"
+      className="min-h-screen flex flex-col items-center justify-center px-4 md:px-28 mb-25 scroll-mt-24"
     >
       <h2 className="text-3xl text-center font-bold text-primary mb-8">
         Projets
