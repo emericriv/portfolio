@@ -35,10 +35,10 @@ const Projets = () => {
       description: (
         <>
           Ce projet est issu d'une formation qui m'a permis de découvrir et
-          d'utiliser des technolgoies innovantes. Elle utilise <Tag>React</Tag>,
-          en utilisant <Tag>Vite</Tag> et pour le backend <Tag>Supabase</Tag>{" "}
-          qui permet de gérer les utilisateurs et les posts. Le déploiement est
-          fait via <Tag>Vercel</Tag>.
+          d'utiliser des technolgoies innovantes. Elle utilise <Tag>React</Tag>{" "}
+          côté frontend et <Tag>Supabase</Tag> côté backend, qui gère
+          l'authentification, paramétrée uniquement avec <Tag>GitHub</Tag>. Le
+          déploiement est fait via <Tag>Vercel</Tag>.
         </>
       ),
       image: "img/social-media.png",
