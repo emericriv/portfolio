@@ -46,6 +46,21 @@ const Projets = () => {
       github: "https://github.com/emericriv/social-media",
     },
     {
+      title: "Landing Page IA",
+      description: (
+        <>
+          Ce projet met en scène une landing page (anglaise) très moderne pour
+          un produit d'intelligence artificielle. Il s'agit d'un projet fictif,
+          utilisant <Tag>React</Tag> et <Tag>TailwindCSS</Tag> et met en place
+          la possibilité de choisir le thème de l'interface. Le déploiement est
+          fait via <Tag>Vercel</Tag>.
+        </>
+      ),
+      image: "img/landing.png",
+      link: "https://react-landing-page-ai.vercel.app",
+      github: "https://github.com/emericriv/react-landing-page-ai",
+    },
+    {
       title: "Slider Dragon Ball Z - One Piece",
       description: (
         <>
