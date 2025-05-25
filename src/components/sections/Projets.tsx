@@ -19,6 +19,25 @@ const Projets = () => {
       github: null,
     },
     {
+      title: "Maudit mot dit",
+      description: (
+        <>
+          Il s'agit d'un projet personnel sur lequel je travaille actuellement.
+          Il s'agit de l'adaptation d'un jeu de société en ligne, j'utilise pour
+          ça ma stack principale : <Tag>React</Tag> et <Tag>Django</Tag>. Pour
+          l'aspect jeu en live, j'utilise <Tag>WebSockets</Tag> avec{" "}
+          <Tag>Redis</Tag>. Le principal du jeu est terminé, les repositories
+          sont en accès public, vous pouvez suivre les instructions pour le
+          dupliquer mais je devrais le mettre en ligne prochainement. Retrouvez
+          le front end dans le lien, pour le backend, je vous invite à le
+          trouver à ses côtés sur github.
+        </>
+      ),
+      image: "img/maudit-mot-dit.png",
+      link: null,
+      github: "https://github.com/emericriv/maudit_mot_dit_frontend",
+    },
+    {
       title: "Mon Portfolio",
       description: (
         <>
@@ -29,21 +48,6 @@ const Projets = () => {
       image: "img/portfolio.png",
       link: "#",
       github: "https://github.com/emericriv/portfolio",
-    },
-    {
-      title: "Réseau Social",
-      description: (
-        <>
-          Ce projet est issu d'une formation qui m'a permis de découvrir et
-          d'utiliser des technolgoies innovantes. Elle utilise <Tag>React</Tag>{" "}
-          côté frontend et <Tag>Supabase</Tag> côté backend, qui gère
-          l'authentification, paramétrée uniquement avec <Tag>GitHub</Tag>. Le
-          déploiement est fait via <Tag>Vercel</Tag>.
-        </>
-      ),
-      image: "img/social-media.png",
-      link: "https://social-media-website-ten-rouge.vercel.app",
-      github: "https://github.com/emericriv/social-media",
     },
     {
       title: "Landing Page IA",
@@ -109,14 +113,16 @@ const Projets = () => {
                 {projet.description}
               </p>
               <div className="mt-2 flex items-center justify-between w-full">
-                <a
-                  href={projet.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-6 py-2 rounded-full border border-secondary text-secondary transition-all duration-300 hover:bg-secondary hover:text-text-color text-center "
-                >
-                  Voir le projet
-                </a>
+                {projet.link && (
+                  <a
+                    href={projet.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-6 py-2 rounded-full border border-secondary text-secondary transition-all duration-300 hover:bg-secondary hover:text-text-color text-center "
+                  >
+                    Voir le projet
+                  </a>
+                )}
                 {projet.github && (
                   <a
                     href={projet.github}
